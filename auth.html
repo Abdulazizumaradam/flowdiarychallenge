@@ -78,7 +78,7 @@
     <body>
         <h1>Welcome to Flowdiary Coding Challenge Webinar</h1><br><br>
 
-        <form onsubmit="return validateAuthForm()">
+        <form onsubmit="return validateAuthForm();">
             <div class="input_deg">
                 <label>Username:</label>
                 <input class="input" type="email" name="email" id="email" placeholder="Enter Email Address">
@@ -93,5 +93,9 @@
                 <input class="submit" type="submit" value="Login">
             </div>
         </form>
+
+        <p id="error" style="color: red; text-align: center;"></p>
+
+        <script src="auth.js"></script>
     </body>
 </html>
