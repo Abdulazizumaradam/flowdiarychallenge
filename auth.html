@@ -2,14 +2,51 @@
 <html>
     <head>
         <title>Flowdiary Coding Challenge</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            body {
+                background-color: #f5f5f5;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: midnightblue;
+                color: white;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            form {
+                position: fixed;
+                left: 40%;
+                background-color: skyblue;
+                margin-top: 30px;
+                width: 300px;
+                padding: 20px;
+            }
+        </style>
     </head>
     <body>
         <h1>Welcome to Flowdiary Coding Challenge Webinar</h1><br><br>
 
-        <form>
+        <form onsubmit="return validateAuthForm()">
             <div>
                 <label>Username:</label>
                 <input type="email" name="email" id="email" placeholder="Enter Email Address">
+            </div>
+
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+            </div>
+
+            <div>
+                <input type="submit" value="Login">
             </div>
         </form>
     </body>
