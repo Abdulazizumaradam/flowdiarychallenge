@@ -25,28 +25,72 @@
                 position: fixed;
                 left: 40%;
                 background-color: skyblue;
-                margin-top: 30px;
+                margin-top: 50px;
                 width: 300px;
                 padding: 20px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 0px;
             }
+
+            .input_deg {
+                margin-bottom: 25px;
+            }
+
+            label {
+                display: inline-block;
+                text-align: right;
+                color: midnightblue;
+                font-weight: bold;
+            }
+
+            .input {
+                border-style: none;
+                border-radius: 10px;
+                width: 200px;
+                height: 20px;
+                padding-left: 10px;
+                margin-left: 10px;
+            }
+
+            input::placeholder {
+                color: midnightblue;
+            }
+            
+            .submit {
+                width: 70px;
+                border-style: none;
+                padding: 7px;
+                background-color: midnightblue;
+                color: white;
+            }
+
+            .submit:hover {
+                background-color: white;
+                color: midnightblue;
+            }
+
+            .submit1 {
+               text-align: center;
+            }
+
         </style>
     </head>
     <body>
         <h1>Welcome to Flowdiary Coding Challenge Webinar</h1><br><br>
 
         <form onsubmit="return validateAuthForm()">
-            <div>
+            <div class="input_deg">
                 <label>Username:</label>
-                <input type="email" name="email" id="email" placeholder="Enter Email Address">
+                <input class="input" type="email" name="email" id="email" placeholder="Enter Email Address">
             </div>
 
-            <div>
+            <div class="input_deg">
                 <label>Password:</label>
-                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <input class="input" type="password" name="password" id="password" placeholder="Enter Password">
             </div>
 
-            <div>
-                <input type="submit" value="Login">
+            <div class="submit1">
+                <input class="submit" type="submit" value="Login">
             </div>
         </form>
     </body>
